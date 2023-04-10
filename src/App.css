@@ -1,38 +1,95 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,200&family=Roboto:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  padding: 10px;
+  background-color: blue;
   text-align: center;
+  color: white;
+  font-weight: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.container {
+  width: 70%;
+  margin: auto;
   min-height: 100vh;
+  padding: 4vmax;
+  box-sizing: border-box;
+}
+
+.container > form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+input,
+textarea,
+button {
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+/* *{
+  border: 1px solid green;
+} */
+
+button {
+  border: none;
+  cursor: pointer;
+  background: crimson;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* ======styling task ========== */
+
+.task {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: rgba(247, 243, 243, 0.803);
+  margin: 20px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.task p {
+  color: black;
+  font-weight: 600;
+  padding: 6px 0;
+}
+
+.task span {
+  color: rgba(0, 0, 0, 0.673);
+}
+
+.task > div {
+  width: 100%;
+}
+.task button {
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.task button:hover {
+  background-color: rgb(213, 12, 52);
+}
+button:hover {
+  background-color: rgb(213, 12, 52);
+}
+@media screen and (max-width: 480px) {
+  .container {
+    /* background-color: lightgreen; */
+    width: 100%;
   }
 }
